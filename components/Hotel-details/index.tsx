@@ -5,7 +5,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
+import Image from 'next/image';
 const Hotel = () => {
   return (
     <section className="pt-[120px] pb-[120px]">
@@ -27,7 +27,9 @@ const Hotel = () => {
                 >
                   {hotel.images.map((img, index) => (
                     <SwiperSlide key={index}>
-                      <img
+                      <Image
+                      width={1200}
+                      height={1200}
                         src={img}
                         alt={`${hotel.name} image ${index + 1}`}
                         className="w-full h-[240px] object-cover"

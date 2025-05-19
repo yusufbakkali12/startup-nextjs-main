@@ -24,7 +24,8 @@ const Hero = () => {
 
     // Clean up function
     return () => {
-      window.onYouTubeIframeAPIReady = null;
+      
+      (window as any).onYouTubeIframeAPIReady = null;
     };
   }, []);
 

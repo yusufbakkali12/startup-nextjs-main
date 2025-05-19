@@ -45,7 +45,7 @@ const AboutSectionTwo = () => {
                   Signification du nom Tafraout:
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Le nom "Tafraout" trouve ses racines dans la langue amazighe (plus précisément le tachelhit), où il signifie originellement "bassin ou citerne dans laquelle l'eau tirée d'un puits est versée". Cette définition première souligne l'importance historique des sources d'eau dans cette région semi-aride. Par extension, le terme a également acquis le sens de "vallée" , décrivant parfaitement la topographie du lieu. En effet, la ville de Tafraout est blottie dans une petite vallée, au pied de l'imposant Djebel Lekest, une montagne de granit rose dont l'érosion a sculpté les formes au fil des millénaires.
+                  Le nom &quotTafraout&quot trouve ses racines dans la langue amazighe (plus précisément le tachelhit), où il signifie originellement &quotbassin ou citerne dans laquelle l&aposeau tirée d&aposun puits est versée&quot. Cette définition première souligne l&aposimportance historique des sources d&aposeau dans cette région semi-aride. Par extension, le terme a également acquis le sens de &quotvallée&quot , décrivant parfaitement la topographie du lieu. En effet, la ville de Tafraout est blottie dans une petite vallée, au pied de l&aposimposant Djebel Lekest, une montagne de granit rose dont l&aposérosion a sculpté les formes au fil des millénaires.
                 </p>
               </div>
              {/* <div className="mb-9">

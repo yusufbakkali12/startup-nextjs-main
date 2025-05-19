@@ -99,6 +99,7 @@ export default function Explorer() {
     <div className="min-h-screen bg-gray-50">
      <Breadcrumb
         pageName="Explorer Tafroute"
+        description=""
         />
 
       {/* Hero banner for Explorer page */}
@@ -224,7 +225,7 @@ export default function Explorer() {
           <div className="lg:flex lg:items-center lg:justify-between">
             <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
               <span className="block">Prêt à visiter Tafroute?</span>
-              <span className="block text-indigo-200">Planifiez votre voyage dès aujourd'hui.</span>
+              <span className="block text-indigo-200">Planifiez votre voyage dès aujourd&aposhui.</span>
             </h2>
             <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
               <div className="inline-flex rounded-md shadow">
