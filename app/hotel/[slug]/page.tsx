@@ -1,9 +1,10 @@
 
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import { use } from 'react';
+import { use } from 'react';  
+import HotelDetails from "@/components/HotelDetails";
 
 interface HotelPageProps {
-  params: { slug: string }
+  params: { slug: number }
 }
 
 
@@ -15,8 +16,8 @@ const HotelPage = ({ params }: HotelPageProps) => {
         pageName="Hotel"
         description="Find your perfect stay with our curated selection of hotels."
       />
-      {/* <Hotel slug={params.slug} /> */}
-      <h1 className="text-3xl font-bold mb-4">Article : {params.slug}</h1>
+      <HotelDetails params={params} />
+      
     </>
   );
 };

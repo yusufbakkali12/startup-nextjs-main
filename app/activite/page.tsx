@@ -1,15 +1,15 @@
 
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
-import Hotel from "@/components/Hotel";
+import Activites from "@/components/Activites";
 const HotelPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Hotel"
-        description="Find your perfect stay with our curated selection of hotels."
+        pageName="Activite"
+        description="Find your perfect activite with our curated selection of hotels."
       />
-      <Hotel />
+      <Activites />
     
     </>
   );

@@ -32,7 +32,7 @@ const Hotel = () => {
             {hotelData.map((hotel) => (
               <div
                 key={hotel.id}
-                className="overflow-hidden rounded-lg bg-white shadow dark:bg-dark-2 dark:shadow-card"
+                className="overflow-hidden rounded-lg bg-white shadow dark:bg-dark dark:shadow-card hover:shadow-lg transition-all duration-300"
               >
                 {/* Image Swiper inside the card */}
                 <Swiper
@@ -50,7 +50,7 @@ const Hotel = () => {
                         height={600}
                         alt={`${hotel.name} image ${index + 1}`}
                         className="w-full h-[340px] object-cover"
-                        onDoubleClick={() => handleDoubleClick(img)}
+                        onClick={() => handleDoubleClick(img)}
                       />
                     </SwiperSlide>
                   ))}
@@ -59,9 +59,11 @@ const Hotel = () => {
                 {/* Card content */}
                 <div className="p-4 ">
                   <h3 className="mb-3 text-xl font-bold text-dark dark:text-white">
+                  <Link href={`${hotel.path}`} >
                     {hotel.name}
+                  </Link>
                   </h3>
-                  <p className="mb-4 text-base text-body-color dark:text-dark-6">
+                  <p className="mb-4 text-base text-body-color dark:text-white">
                     {  truncateText(hotel.description, 120)}
                     
                     <Link href={`${hotel.path}`} className="text-primary hover:underline text-sm">
@@ -73,7 +75,7 @@ const Hotel = () => {
                       <span className="text-lg font-bold text-primary mr-1">
                         {hotel.price}DHs
                       </span>
-                      <span className="text-sm text-body-color">/Nuit</span>
+                      <span className="text-sm text-body-color dark:text-gray-dark">/Nuit</span>
                     </div>
                     <div className="flex items-center">
                       <svg
@@ -81,7 +83,7 @@ const Hotel = () => {
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="h-5 w-5 text-yellow-400"
+                        className="h-5 w-5 text-yellow-400 dark:text-white "
                       >
                         <path
                           strokeLinecap="round"
@@ -89,10 +91,10 @@ const Hotel = () => {
                           d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
                         />
                       </svg>
-                      <span className="ml-1 text-body-color">{hotel.rating}</span>
+                      <span className="ml-1 text-body-color dark:text-dark-6">{hotel.rating}</span>
                     </div>
                   </div>
-                  <div className="mt-4 text-sm text-body-color">{hotel.location}</div>
+                  <div className="mt-4 text-sm text-body-color dark:text-dark-6">{hotel.location}</div>
                 </div>
               </div>
             ))}
