@@ -265,4 +265,4 @@ export const RestaurantData: Restaurant[] = [
 
 
 ];
-export default Restaurant;
+export default RestaurantData;
