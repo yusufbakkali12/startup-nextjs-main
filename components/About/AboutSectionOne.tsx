@@ -12,7 +12,7 @@ const AboutSectionOne = () => {
   const images = [
     "/images/city/1.jpg",
     "/images/city/2.jpg",
-    "/images/city/3.jpg",
+    // "/images/city/3.jpg",
 
   ];
   const List = ({ text }) => (
@@ -40,7 +40,7 @@ const AboutSectionOne = () => {
 
             <div className="w-full px-4 lg:w-1/2">
               <div
-                className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
+                className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[750px] lg:mr-0"
                 data-wow-delay=".2s"
               >
                 {/* <Image

@@ -33,7 +33,7 @@ const SiderSlider: React.FC<SiderSliderProps> = ({ images }) => {
               width={1700}
               height={1700}
            
-              className="w-full h-auto rounded-xl shadow-md"
+              className="max-w-[700px] h-[400px] rounded-xl shadow-md"
             />
           </SwiperSlide>
         ))}
